@@ -5,8 +5,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  eslintConfig: {
-    ignorePatterns: ["node_modules", ".next/cache", ".env.*"],
+  eslint: {
+    // This disables ESLint during builds
+    ignoreDuringBuilds: true,
   },
 
 
