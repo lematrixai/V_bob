@@ -4,7 +4,7 @@ import { UploadDropzone } from '@uploadthing/react';
 import { OurFileRouter } from '../lib/uploadthing';
 import { FileIcon, UploadCloud } from 'lucide-react'; 
 import { useState } from 'react';
-
+import { UploadDropzoneProps } from '@uploadthing/react';
 export default function UploadComponent() {
   const [isDragging, setIsDragging] = useState(false);
 
