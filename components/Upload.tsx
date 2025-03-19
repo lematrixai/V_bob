@@ -4,7 +4,6 @@ import { UploadDropzone } from '@uploadthing/react';
 import { OurFileRouter } from '../lib/uploadthing';
 import { FileIcon, UploadCloud } from 'lucide-react'; 
 import { useState } from 'react';
-import { UploadDropzoneProps } from '@uploadthing/react';
 export default function UploadComponent() {
   const [isDragging, setIsDragging] = useState(false);
 
@@ -23,7 +22,7 @@ export default function UploadComponent() {
           }}
           onDragOver={() => setIsDragging(true)}
           onDragLeave={() => setIsDragging(false)}
-          className={({ isDragActive }: any) => `
+          className={({ isDragActive }) => `
             relative flex flex-col items-center justify-center w-full h-64 p-6
             border-2 border-dashed rounded-lg transition-all duration-300 ease-in-out
             ${isDragActive || isDragging
