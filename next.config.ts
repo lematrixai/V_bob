@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   typescript: {
     ignoreBuildErrors: false,
-  }  
+  },
+  eslintConfig: {
+    ignorePatterns: ["node_modules", ".next/cache", ".env.*"],
+  },
 
 
 };
